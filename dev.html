@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Laptop Preferences</title>
+  <style>
+    body {
+      background-color: lavender;
+      font-family: sans-serif; /* Set font for better readability */
+      margin: 20px; /* Add some margin for better spacing */
+    }
+
+    h1 {
+      color: #333; /* Darker heading color */
+    }
+
+    p {
+      margin-bottom: 5px; /* Reduce paragraph bottom margin */
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      width: 200px; /* Set input field width */
+    }
+
+    h2 {
+      margin-top: 20px; /* Add space above section headings */
+    }
+
+    label {
+      margin-left: 5px; /* Add space between radio button and label */
+    }
+
+    button {
+      background-color: #4CAF50; /* Green button color */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Laptop Preferences</h1>
+
+  <p>Please enter your name:</p>
+  <input type="text" id="name">
+
+  <p>Please enter your age:</p>
+  <input type="number" id="age">
+
+  <h2>Preferred Laptop Brand</h2>
+  <form>
+    <input type="radio" id="acer" name="brand" value="acer">
+    <label for="acer">Acer</label><br>
+
+    <input type="radio" id="asus" name="brand" value="asus">
+    <label for="asus">Asus</label><br>
+
+    <input type="radio" id="hp" name="brand" value="hp">
+    <label for="hp">HP</label><br>
+
+    <input type="radio" id="samsung" name="brand" value="samsung">
+    <label for="samsung">Samsung</label><br>
+
+    <h2>Laptop Type</h2>
+    <input type="radio" id="gaming" name="laptopType" value="gaming">
+    <label for="gaming">Gaming Laptop</label><br>
+
+    <input type="radio" id="working" name="laptopType" value="working">
+    <label for="working">Working Laptop</label><br>
+
+    <h2>Preferred Graphics Card</h2>
+    <input type="radio" id="nvidia" name="graphics" value="nvidia">
+    <label for="nvidia">Nvidia GeForce RTX 4090</label><br>
+
+    <input type="radio" id="amd" name="graphics" value="amd">
+    <label for="amd">AMD Radeon RX 7600</label><br>
+
+    <input type="radio" id="intel" name="graphics" value="intel">
+    <label for="intel">Intel Iris Xe</label><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
